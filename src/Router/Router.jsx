@@ -7,6 +7,7 @@ import Register from "../Pages/Register/Register";
 import Error from "../Pages/ErrorPage/error";
 import Event from "../Pages/Event/Event";
 import Professionals from "../Pages/Pofessionals/Professionals";
+import Course from "../Pages/Course/Course";
 
 const myCreatedRouter = createBrowserRouter([
         {
@@ -16,7 +17,13 @@ const myCreatedRouter = createBrowserRouter([
             children: [
                 {
                     path: '/',
-                    element: <Home></Home>
+                    element: <Home></Home>,
+                    loader: () => fetch ('/data.json')
+                },
+                {
+                    path: '/course/:id',
+                    element: <Course></Course>,
+                    loader: ()=> fetch('/data.json')
                 },
                 {
                     path: '/professionals',

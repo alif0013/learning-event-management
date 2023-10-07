@@ -1,10 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { BsCodeSlash, BsFillImageFill, BsFillBagFill, BsFillSuitHeartFill, BsFillBarChartFill, BsFillPieChartFill, BsFillClipboardPlusFill, BsDatabaseCheck } from 'react-icons/bs';
+import CourseCard from './CourseCard';
 
 
 
 const Home = () => {
+
+    // loading data
+    const courses = useLoaderData()
+   
+
     return (
         <div>
             {/* banner section */}
@@ -94,9 +100,15 @@ const Home = () => {
 
             {/* Explore top courses */}
             <div>
-                <div className=''>
+                <div className='mb-16'>
                     <h1 className='text-5xl pt-10 text-center font-semibold'>Explore top courses</h1>
                     <p className='pt-5 text-[#A6A7B2] text-lg text-center'>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                </div>
+
+                <div className='grid pl-5 grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4'>
+                    {
+                        courses.map(course => <CourseCard course={course} key={course.id}></CourseCard>)
+                    }
                 </div>
             </div>
 
