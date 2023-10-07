@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/X41Gd8X/courses-img22.jpg",
+      "title": "Python Django Web Develop: To-Do App",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...",
+      "published_date": "2023-10-07",
+      "student": "10",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/zscyFWw/courses-img23.jpg",
+      "title": "Microsoft Excel - Excel from Beginner",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-08",
+      "student": "15",
+      "price": 39.99
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/p3XpXZv/courses-img24.jpg",
+      "title": "Deep Learning The Numpy Stack in Python",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-09",
+      "student": "8",
+      "price": 24.99
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/28djyDV/courses-img6.jpg",
+      "title": "JavaScript: Understanding the Weird Parts",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-10",
+      "student": "12",
+      "price": 44.99
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/hYyw6PG/courses-img8.jpg",
+      "title": "20 Web Projects With Vanilla JavaScript",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-11",
+      "student": "20",
+      "price": 54.99
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/BzGRgpG/courses-img11.jpg",
+      "title": "JavaScript: The Advanced Concepts | Marketing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-12",
+      "student": "5",
+      "price": 19.99
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/RYsyMyz/courses-img12.jpg",
+      "title": "The Drawing Course - to Advanced | Art",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-12",
+      "student": "6",
+      "price": 19.99
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/kHmtbv8/courses-img21.jpg",
+      "title": "Health Related Fitness - Healthy Food For The Brain",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "published_date": "2023-10-12",
+      "student": "3",
+      "price": 19.99
+    }
+  ]
+  
