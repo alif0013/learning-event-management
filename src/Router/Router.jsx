@@ -5,10 +5,10 @@ import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/ErrorPage/error";
-import Event from "../Pages/Event/Event";
 import Professionals from "../Pages/Pofessionals/Professionals";
 import Course from "../Pages/Course/Course";
 import PrivateRoute from "./PrivateRoute";
+import About from "../Pages/About/About";
 
 const myCreatedRouter = createBrowserRouter([
         {
@@ -28,15 +28,15 @@ const myCreatedRouter = createBrowserRouter([
                 },
                 {
                     path: '/professionals',
-                    element: <Professionals></Professionals>
+                    element: <PrivateRoute><Professionals></Professionals></PrivateRoute>
                 },
                 {
-                    path: '/event',
-                    element: <Event></Event>
+                    path: '/about',
+                    element: <PrivateRoute> <About></About> </PrivateRoute>
                 },
                 {
                     path: 'contact',
-                    element: <Contact></Contact>
+                    element: <PrivateRoute> <Contact></Contact> </PrivateRoute>
                 },
                 {
                     path: '/login',

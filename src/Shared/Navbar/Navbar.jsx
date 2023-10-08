@@ -29,9 +29,9 @@ const Navbar = () => {
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
         }>Professionals</NavLink></li>
 
-        <li><NavLink to='/event' className={({ isActive, isPending }) =>
+        <li><NavLink to='/about' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
-        }>Event</NavLink></li>
+        }>About</NavLink></li>
 
         <li><NavLink to='/contact' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""

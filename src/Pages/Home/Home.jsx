@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <div>
             {/* banner section */}
-            <div className="hero min-h-screen bg-[#F5F5F5]">
+            <div className="hero min-h-screen bg-gradient-to-r from-[#fef0ed] to-[#ecfaff]">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src="https://i.ibb.co/Fx2BzV2/banner-img5.png" className="max-w-sm rounded-lg" />
                     <div>
