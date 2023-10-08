@@ -18,6 +18,13 @@ const Register = () => {
 
         // Creat user by passing email and password
         creatUser(email, password)
+        .then((userCredential) => {
+            // Set the display name for the user
+            updateProfile(userCredential.user, {
+              displayName: name,
+            })
+        })
+        
             .then(res => console.log(res.user))
             .catch(err => console.log(err))
 

@@ -35,14 +35,18 @@ const Login = () => {
 
         signIn(email, password)
             .then(res => {
-                console.log(res.user)
+                
+                    console.log(res.user);
                 toast.success('User logged in successfully');
 
                 // private route navigate after login
                 navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
-                toast.error(error.message)
+
+                toast.error("please check your email and password and try again!")
+
+
             })
 
     }

@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { BsCodeSlash, BsFillImageFill, BsFillBagFill, BsFillSuitHeartFill, BsFillBarChartFill, BsFillPieChartFill, BsFillClipboardPlusFill, BsDatabaseCheck } from 'react-icons/bs';
 import CourseCard from './CourseCard';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import LearnToCode from '../../Components/LearnToCode/LearnToCode';
 
 
 const Home = () => {
 
     // loading data
     const courses = useLoaderData()
-   
+
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            once: true,    // Whether the animation should only happen once
+        });
+
+        AOS.refresh();
+    }, [])
+
 
     return (
         <div>
@@ -27,7 +39,7 @@ const Home = () => {
 
             {/* services categories */}
             <div>
-                <h1 className='text-center text-5xl mt-16 mb-6 font-semibold'>Services</h1>
+                <h1 data-aos="zoom-in" className='text-center text-5xl mt-16 mb-6 font-semibold'>Services</h1>
 
                 <div className=' md:flex justify-between mt-16'>
                     <div className=''>
@@ -101,7 +113,7 @@ const Home = () => {
             {/* Explore top courses */}
             <div>
                 <div className='mb-16'>
-                    <h1 className='text-5xl pt-10 text-center font-semibold'>Explore top courses</h1>
+                    <h1 data-aos="zoom-in" className='text-5xl pt-10 text-center font-semibold'>Explore top courses</h1>
                     <p className='pt-5 text-[#A6A7B2] text-lg text-center'>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
                 </div>
 
@@ -111,6 +123,12 @@ const Home = () => {
                     }
                 </div>
             </div>
+
+            {/* learn to code */}
+                    <div>
+                        <LearnToCode></LearnToCode>
+                    </div>
+
 
         </div>
     );

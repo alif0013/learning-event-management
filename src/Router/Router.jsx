@@ -8,6 +8,7 @@ import Error from "../Pages/ErrorPage/error";
 import Event from "../Pages/Event/Event";
 import Professionals from "../Pages/Pofessionals/Professionals";
 import Course from "../Pages/Course/Course";
+import PrivateRoute from "./PrivateRoute";
 
 const myCreatedRouter = createBrowserRouter([
         {
@@ -22,7 +23,7 @@ const myCreatedRouter = createBrowserRouter([
                 },
                 {
                     path: '/course/:id',
-                    element: <Course></Course>,
+                    element: <PrivateRoute> <Course></Course> </PrivateRoute>,
                     loader: ()=> fetch('/data.json')
                 },
                 {
