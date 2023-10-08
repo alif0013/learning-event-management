@@ -18,7 +18,10 @@ const Login = () => {
 
     const handleGoogleSignIn = () => {
         signInWithGoogle()
-            .then(res => console.log(res.user))
+            .then(res => {
+                toast.success('You logged in successfully');
+                navigate(location?.state ? location.state : '/');
+            })
             .catch(err => console.log(err))
     }
 
@@ -37,7 +40,7 @@ const Login = () => {
             .then(res => {
                 
                     console.log(res.user);
-                toast.success('User logged in successfully');
+                toast.success('You logged in successfully');
 
                 // private route navigate after login
                 navigate(location?.state ? location.state : '/');

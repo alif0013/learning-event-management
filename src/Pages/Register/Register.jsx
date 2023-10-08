@@ -1,10 +1,14 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import toast from 'react-hot-toast';
+
+
 
 const Register = () => {
 
     const { creatUser } = useContext(AuthContext)
+    
 
     const handleRegister = e => {
 
@@ -18,15 +22,18 @@ const Register = () => {
 
         // Creat user by passing email and password
         creatUser(email, password)
-        .then((userCredential) => {
-            // Set the display name for the user
-            updateProfile(userCredential.user, {
-              displayName: name,
-            })
-        })
         
-            .then(res => console.log(res.user))
-            .catch(err => console.log(err))
+            .then(res =>{
+                console.log(res.user)
+                toast.success('Registration successfully');
+
+    
+            })
+            .catch(err => {
+                console.log(err)
+                toast.error("please check your email and password and try again!")
+
+            })
 
     }
 

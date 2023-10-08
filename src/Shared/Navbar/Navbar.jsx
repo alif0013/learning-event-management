@@ -10,14 +10,14 @@ const Navbar = () => {
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                toast.success('User logged Out successfully');
+                toast.success('you logged Out successfully');
             })
             .catch(err => {
                 toast.error(err.message)
             })
     }
 
-    console.log('User:', user);
+    // console.log('User:', user);
 
 
     const navLinks = <>
