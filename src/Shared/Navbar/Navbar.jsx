@@ -62,7 +62,15 @@ const Navbar = () => {
                 {
                     user ? <>
 
-                        <span className='hidden md:mr-5 md:block'>Email: {user.email}</span>
+                        <div>
+                            <div className="avatar online hidden md:mr-5 md:block">
+                                <div className="w-[50px] rounded-full">
+                                    <img src={user.photoURL} />
+                                </div>
+                            </div>
+                        </div>
+
+                        <span className='hidden md:mr-5 md:block'>{user.displayName}</span>
                         <Link to='/' onClick={handleLogOut} className="px-10 py-2 rounded bg-[#EC272E] text-white lg:text-lg font-semibold hover:bg-[#08A9E6]">LogOut</Link>
                     </>
                         :

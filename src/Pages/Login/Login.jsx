@@ -47,8 +47,8 @@ const Login = () => {
             })
             .catch(error => {
 
-                toast.error("please check your email and password and try again!")
-
+                toast.error("your email and password doesn't match please check and try again!")
+                // toast.error('Login failed: ' + error.message);
 
             })
 
